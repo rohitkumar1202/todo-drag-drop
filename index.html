@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sample</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+      <style>
+          .dragDropBorder{border:1px solid #ccc; width:350px;height:250px;padding:10px;}
+      </style>
+      <script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+  </head>
+  <body>
+   <div class="container">
+    <div class="panel panel-default" id="focusPannel">
+      <div class="panel-heading">
+        <h3 class="panel-title">New Panel Entry</h3>
+      </div>
+  <div class="panel-body">
+    <div class="input-group">
+  <!--<span class="input-group-addon" id="basic-addon1">@</span>-->
+  <input type="text" class="form-control "  id="panelFocus" aria-describedby="basic-addon1" >
+   </div>
+        </div> 
+      
+      
+        <div class="panel-body" id="editedPannelOne">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="col-lg-4 dragDropBorder" id="drag6" draggable="true" ondragstart="drag(event)">
+    <div class="row ">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control " aria-label="..." >
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+      </div>
+            </div>           
+            
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                       <div class="col-lg-4 dragDropBorder" id="drag5" draggable="true" ondragstart="drag(event)">
+                                                    
+    <div class="row ">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+    </div>
+      </div>
+                        
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                       <div class="col-lg-4 dragDropBorder" id="drag4" draggable="true" ondragstart="drag(event)">
+                            
+    <div class="row ">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+      </div>    
+            </div>   
+  
+          <div class="col-lg-4 dragDropBorder" id="div" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>    
+            
+            
+            
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="col-lg-4 dragDropBorder" id="drag5" draggable="true" ondragstart="drag(event)">
+    <div class="row ">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+      </div>    
+            </div>  
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="col-lg-4 dragDropBorder" id="drag6" draggable="true" ondragstart="drag(event)">
+    <div class="row ">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+      </div>            
+            </div>        
+       </div> 
+      </div>      
+         <div class="panel panel-default" id="panelDetailsEdit">
+      <div class="panel-heading">
+        <h3 class="panel-title">  Edit Panel </h3>
+      </div>
+  <div class="panel-body" id="editedPannel">
+    <div class="row">
+  <div class="col-lg-6">
+      <h3><span class="label label-info">Title</span></h3>
+    <div class="input-group" >
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+             <span class="input-group-addon">
+        <span class="glyphicon glyphicon-remove mkeHidden " aria-hidden="true"></span>
+      </span>       
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+      </div>
+      <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+            <span class="input-group-addon">
+        <span class="glyphicon glyphicon-remove mkeHidden " aria-hidden="true"></span>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+            <span class="input-group-addon">
+        <span class="glyphicon glyphicon-remove mkeHidden" aria-hidden="true"></span>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+         <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+       <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+            <span class="input-group-addon">
+        <span class="glyphicon glyphicon-remove mkeHidden " aria-hidden="true"></span>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row --> 
+      <p><a href="#" class="btn btn-primary pull-right" id="donebtn" role="button">Done</a> </p>
+      </div>
+      </div>
+      </div>      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+  </body>
+</html>
